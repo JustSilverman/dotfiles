@@ -1,0 +1,34 @@
+[user]
+	name = Justin Silverman
+	email = justin.silverman@gmail.com
+
+# Use the OSX keychain to cache your github credentials
+[credential]
+  helper = osxkeychain
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+
+[color "branch"]
+  current = yellow
+
+[alias]
+  # "Long" Logs - render's the log with high signal and low noise
+  ll = log \
+  --graph \
+  --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an - %cr)' \
+  --date=relative
+
+# push the current branch to whatever it's tracking
+[push]
+  default = tracking
+
+[rebase]
+  autosquash = true
+
+[branch]
+  autosetupmerge = true
+
+
